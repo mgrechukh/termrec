@@ -314,6 +314,7 @@ static void record_ttyrec(FILE *f, void* state, const struct timeval *tm, const 
     h.len=little_endian(len);
     fwrite(&h, 1, sizeof(h), f);
     fwrite(buf, 1, len, f);
+    fflush(f);
 }
 
 static void record_ttyrec_finish(FILE *f, void* state)
