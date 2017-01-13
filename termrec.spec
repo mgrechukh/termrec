@@ -1,11 +1,11 @@
 # vim: set sw=4 ts=4 et nu:
-
+%define commit 231c8aa
 Name:               termrec
 Version:            0.17.1
 %define soname      0
 Release:            mgr1
 Summary:            Records Videos of Terminal Output
-Source:             https://github.com/mgrechukh/termrec/tarball/%{version}-%{release}
+Source:             https://github.com/mgrechukh/termrec/tarball/%commit/mgrechukh-termrec-0.17-146-g%commit.tar.gz
 URL:                http://angband.pl/termrec.html
 Group:              Productivity/Text/Utilities
 License:            LGPL-3.0
@@ -33,7 +33,8 @@ Requires:           libtty%{soname} = %{version}-%{release}
 Library for handling terminals.
 
 %prep
-%setup -q
+%setup -q -n mgrechukh-termrec-%commit
+autoreconf -fisv
 
 %build
 %configure
