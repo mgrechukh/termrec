@@ -3,9 +3,9 @@
 Name:               termrec
 Version:            0.17.1
 %define soname      0
-Release:            mgr1
+Release:            mgr2
 Summary:            Records Videos of Terminal Output
-Source:             https://github.com/mgrechukh/termrec/tarball/%commit/mgrechukh-termrec-0.17-146-g%commit.tar.gz
+Source:             https://github.com/mgrechukh/termrec/tarball/%commit/mgrechukh-termrec-0.17-150-g%commit.tar.gz
 URL:                http://angband.pl/termrec.html
 Group:              Productivity/Text/Utilities
 License:            LGPL-3.0
