@@ -1,7 +1,7 @@
 # vim: set sw=4 ts=4 et nu:
 
 Name:               termrec
-Version:            0.18
+Version:            0.17.1
 %define soname      0
 Release:            mgr1
 Summary:            Records Videos of Terminal Output
