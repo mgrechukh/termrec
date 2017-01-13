@@ -53,7 +53,7 @@ autoreconf -fisv
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS BUGS COPYING.LIB ChangeLog README
+%doc BUGS COPYING.LIB ChangeLog README
 %{_bindir}/proxyrec
 %{_bindir}/termcat
 %{_bindir}/termplay
@@ -67,8 +67,7 @@ autoreconf -fisv
 
 %files -n libtty-devel
 %defattr(-,root,root)
-%{_includedir}/ttyrec.h
-%{_includedir}/vt100.h
+%{_includedir}/*.h
 %{_libdir}/libtty.so
 %{_libdir}/libtty.a
 %doc %{_mandir}/man3/*.3.*
